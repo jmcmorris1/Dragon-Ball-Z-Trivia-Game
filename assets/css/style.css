@@ -1,0 +1,26 @@
+.jumbotron {
+	font-family: Papyrus, Verdana, serif;
+	font-size: 36px;
+	text-shadow: 2px 2px #FF0000;
+	text-align: center;
+	color: blue;
+}
+
+.instructions	{
+	font-family: Verdana;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase; 
+	font-weight: bold;
+	color: red;
+}
+
+.question, .answers	{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#results-button	{
+	text-align: center;
+}
