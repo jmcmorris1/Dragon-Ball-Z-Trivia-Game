@@ -6,8 +6,17 @@
 	color: blue;
 }
 
+.timer	{
+	font-family: Verdana;
+	text-shadow: 2px 2px #4700f8;
+	font-size: 28px;
+	text-align: center; 
+	font-weight: bold;
+	color: red;
+}
 .instructions	{
 	font-family: Verdana;
+	text-shadow: 2px 2px #4700f8;
 	font-size: 28px;
 	text-align: center;
 	text-transform: uppercase; 
@@ -19,8 +28,6 @@
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 18px;
-}
-
-#results-button	{
-	text-align: center;
+	text-shadow: 2px 2px #4700f8;
+	color: red;
 }

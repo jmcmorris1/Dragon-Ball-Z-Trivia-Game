@@ -22,27 +22,35 @@
 	</div>
 
 	<div class="instructions"
-		<p> Welcome young warrior. You will be given 45 seconds to answer 5 questions that will test your knowledge of the Dragon Ball Z universe. Can you guess all the questions correctly and be victorious or will you be a failure like Yamcha?? Good Luck. <br>
-		#Make Gohan Great Again.</p>
+		<p> Welcome young warrior. You will be given 45 seconds to answer 6 questions that will test your knowledge of the Dragon Ball Z universe. Can you guess all the questions correctly and be victorious or will you be a failure like Yamcha?? Click the 7 star ball to begin the challenge, good luck. <br>
+		</p>
 		<button type="button" id="start">Begin Challenge</button>
 	</div>
 
-	<div id="show-number"></div>
+		<div style= "text-align: center">
+		<img src="assets/images/7star.png" style=" background: transparent; width: 50px; height: 50px;">
+		</div>
+	
 
-	<p class="question">1. If one minute has passed in the real world outside of the hyperbolic time chamber, how much time has passed inside the chamber?</p>
+	<div class="timer"
+		<h2>Time Remaining:</h2>
+	</div>
+	
+
+	<p class="question">1. How old was Goten when he first turned into a Super Saiyan?</p>
 			<ul class="answers">
-			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A. 1 year</label><br/>
-			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">B. 6 minutes</label><br/>
-			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">C. 6 hours and 5 minutes</label><br/>
-			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">D. 1 hour</label><br/>
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A. 7</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">B. 10</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">C. 6 </label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">D. 9 </label><br/>
 			</ul> 
 
 	<p class="question">2. Just after Cell's defeat, what is the final wish Krillin makes with the Dragon Balls?</p>        
 
 		<ul class="answers">            
 			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. A full head of hair</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. Bringing all of Cell's victims back to life</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. Removing the bomb from inside the androids</label><br/>           
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. To bring all of Cell's victims back to life</label><br/>            
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. To remove the bomb from inside the androids</label><br/>           
 			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. To be as strong as Goku</label><br/>       
 			</ul>        
 
@@ -50,7 +58,7 @@
 
 		<ul class="answers">            
 			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. The other world (heaven)</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. Mike Tyson's House</label><br/>            
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. In the Hyperbolic Time Chamber</label><br/>            
 			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. Planet Kaishin</label><br/>           
 			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. Planet Yardrat</label><br/>       
 			</ul>  
@@ -67,44 +75,39 @@
 	<p class="question">5. Who is the only character in DBZ that has never died on the show?</p>        
 
 		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. Dende</label><br/>           
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. Bulma</label><br/>           
 			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. Hercule</label><br/>            
 			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. Chi Chi</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. 2 Chainz</label><br/>       
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. Gohan</label><br/>       
 			</ul> 
 
+
+	<p class="question">6. In total, how many forms does Frieza, Cell and Majin Buu have?</p>        
+
+		<ul class="answers">            
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. 13</label><br/>           
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. 11</label><br/>            
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. 8</label><br/>           
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. 9</label><br/>       
+			</ul> 
+
+		
 		<div style= "text-align:center">
-		<button type="button" id="results">Challenge Completed</button>
+		<button type="button" id="results-button">Challenge Completed</button>
 		</div>
-		
-		<div id="category1">            
-			<p><strong>Question 1:</strong> The correct answer is:<strong>C</strong>.</p>   
-		</div>     
-		
-		<div id="category2">            
-			<p><strong>Question 2:</strong> The correct answer is: <strong>C</strong>.</p>        
-		</div>        
 
-		<div id="category3">            
-			<p><strong>Question 3:</strong> The correct answer is: <strong>D</strong>.</p>        
-		</div>        
-
-		<div id="category4">            
-			<p><strong>Question 4:</strong> The correct answer is: <strong>D</strong>.</p>        
-		</div>        
-
-		<div id="category5">            
-			<p><strong>Question 5:</strong> The correct answer is: <strong>B</strong>.</p>        
-		</div>        
-
-		        
-		
+		<br>
 		<br>
 
 		<div style= "text-align: center">
-		<button type="button" id="restart">Use the Dragon Balls to wish for another game</button>
+		<img src="assets/images/4star.png" style="width: 50px; height: 50px;">
+		</div>
+		
+		<div style= "text-align: center"><button type="button" id="rematch-button">Use the Dragon Ball to wish for another game</button>
 		</div>
 
-<link rel="stylesheet" type="text/css" href="app.js">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
