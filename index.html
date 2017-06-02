@@ -1,113 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
-	<title>Dragon Ball Z Trivia Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Dragon Ball Z Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </head>
+
 <body>
-
-<style>
-	body {
-		background-image: url("assets/images/Z_Fighters.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-</style>
-
-
-
-	<div class="jumbotron">
-	   <h1>Dragon Ball Z Trivia</h1>
-	</div>
-
-	<div class="instructions"
-		<p> Welcome young warrior. You will be given 45 seconds to answer 6 questions that will test your knowledge of the Dragon Ball Z universe. Can you guess all the questions correctly and be victorious or will you be a failure like Yamcha?? Click the 7 star ball to begin the challenge, good luck. <br>
-		</p>
-		<button type="button" id="start">Begin Challenge</button>
-	</div>
-
-		<div style= "text-align: center">
-		<img src="assets/images/7star.png" style=" background: transparent; width: 50px; height: 50px;">
-		</div>
-	
-
-	<div class="timer"
-		<h2>Time Remaining:</h2>
-	</div>
-	
-
-	<p class="question">1. How old was Goten when he first turned into a Super Saiyan?</p>
-			<ul class="answers">
-			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A. 7</label><br/>
-			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">B. 10</label><br/>
-			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">C. 6 </label><br/>
-			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">D. 9 </label><br/>
-			</ul> 
-
-	<p class="question">2. Just after Cell's defeat, what is the final wish Krillin makes with the Dragon Balls?</p>        
-
-		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. A full head of hair</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. To bring all of Cell's victims back to life</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. To remove the bomb from inside the androids</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. To be as strong as Goku</label><br/>       
-			</ul>        
-
-	<p class="question">3. Where did Goku learn Instant Transmission?</p>        
-
-		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. The other world (heaven)</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. In the Hyperbolic Time Chamber</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. Planet Kaishin</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. Planet Yardrat</label><br/>       
-			</ul>  
-
-	<p class="question">4. Which pair of Androids appeared first in the Android Saga?</p>        
-
-		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. 18,19</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. 18,20</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. 17,18</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. 19,20</label><br/>       
-			</ul>             
-
-	<p class="question">5. Who is the only character in DBZ that has never died on the show?</p>        
-
-		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. Bulma</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. Hercule</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. Chi Chi</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. Gohan</label><br/>       
-			</ul> 
-
-
-	<p class="question">6. In total, how many forms does Frieza, Cell and Majin Buu have?</p>        
-
-		<ul class="answers">            
-			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. 13</label><br/>           
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. 11</label><br/>            
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. 8</label><br/>           
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. 9</label><br/>       
-			</ul> 
-
-		
-		<div style= "text-align:center">
-		<button type="button" id="results-button">Challenge Completed</button>
-		</div>
-
-		<br>
-		<br>
-
-		<div style= "text-align: center">
-		<img src="assets/images/4star.png" style="width: 50px; height: 50px;">
-		</div>
-		
-		<div style= "text-align: center"><button type="button" id="rematch-button">Use the Dragon Ball to wish for another game</button>
-		</div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-
+    <style>
+    body {
+        background-image: url("assets/images/Z_Fighters.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    </style>
+    <div id="wrapper">
+        <h1>Dragon Ball Z Trivia</h1>
+        <div id="sub-wrapper">
+            <div id="quiz-area">
+                <p>Welcome young warrior. You will be given 45 seconds to answer 6 questions that will test your knowledge of the Dragon Ball Z universe. Can you guess all the questions correctly and be victorious or will you be a failure like Yamcha?? Click the 7 star ball to begin the challenge, good luck.</p>
+                <div class= "button">
+                <button id="start">Begin Challenge</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
 </html>

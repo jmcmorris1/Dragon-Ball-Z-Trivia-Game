@@ -1,33 +1,47 @@
-.jumbotron {
-	font-family: Papyrus, Verdana, serif;
-	font-size: 36px;
-	text-shadow: 2px 2px #FF0000;
-	text-align: center;
-	color: blue;
+h1 {
+    font-family: Papyrus, Verdana, serif;
+    font-size: 36px;
+    text-shadow: 2px 2px #FF0000;
+    text-align: center;
+    color: blue;
 }
 
-.timer	{
-	font-family: Verdana;
-	text-shadow: 2px 2px #4700f8;
-	font-size: 28px;
-	text-align: center; 
-	font-weight: bold;
-	color: red;
-}
-.instructions	{
-	font-family: Verdana;
-	text-shadow: 2px 2px #4700f8;
-	font-size: 28px;
-	text-align: center;
-	text-transform: uppercase; 
-	font-weight: bold;
-	color: red;
+.timer {
+    font-family: Verdana;
+    text-shadow: 2px 2px #4700f8;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
 }
 
-.question, .answers	{
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 18px;
-	text-shadow: 2px 2px #4700f8;
-	color: red;
+p, h2, h3 {
+    font-family: Verdana;
+    text-shadow: 2px 2px #4700f8;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+}
+
+.question,
+.answers {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px #4700f8;
+    color: red;
+}
+
+.button {
+	text-align: center;
+}
+
+#start {
+	position: absolute;
+}
+
+#start-over {
+	position: absolute;
 }
