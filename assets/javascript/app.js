@@ -17,22 +17,22 @@ var questions = [{
 
     question: "How old was Goten when he first turned into a Super Saiyan?",
     answers: ["A. 10", "B. 7", "C. 6", "D. 9"],
-    correctAnswer: "A. 10",
+    correctAnswer: "B. 7",
 }, {
 
     question: "Just after Cell's defeat, what is the final wish Krillin makes with the Dragon Balls?",
     answers: ["A. A full head of hair", "B. To bring all of Cell's victims back to life", "C. To remove the bomb from inside the androids", "D. To be as strong as Goku"],
-    correctAnswer: "B. To bring all of Cell's victims back to life",
+    correctAnswer: "C. To remove the bomb from inside the androids",
 }, {
 
     question: "Where did Goku learn Instant Transmission?",
     answers: ["A. The other world (heaven)", "B. In the Hyperbolic Time Chamber", "C. Planet Kaishin", "D. Planet Yardrat"],
-    correctAnswer: "C. Planet Kaishin",
+    correctAnswer: "D. Planet Yardrat",
 }, {
 
     question: "4. Which pair of Androids appeared first in the Android Saga?",
     answers: ["A. 18, 19", "B. 18, 20", "C. 17, 18", "D. 19, 20"],
-    correctAnswer: "C. 17, 18",
+    correctAnswer: "D. 19, 20",
 }, {
 
     question: "5. Who is the only character in DBZ that has never died on the show?",
@@ -40,9 +40,9 @@ var questions = [{
     correctAnswer: "B. Hercule",
 }, {
 
-    question: "6. In total, how many forms does Frieza, Cell and Majin Buu have?",
-    answers: ["A. 13", "B. 11", "C. 8", "D. 9"],
-    correctAnswer: "A. 13",
+    question: "6. If one minute has passed in the real world outside of the Hyperbolic Time Chamber, how much time has passed inside the chamber?",
+    answers: ["A. One year,one day, and one minute", "B. One year", "C. 6 hours and 5 minutes", "D. 6 minutes"],
+    correctAnswer: "C. 6 hours and 5 minutes",
 }];
 
 //Variable to hold setInterval
@@ -92,7 +92,7 @@ var game = {
         panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
         panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
         panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
-        panel.append("<br><div class ='button'<button id='start-over'>Start Over?</button></div>");
+        panel.append("<br><button id='start-over'>Start Over?</button></div>");
     },
     clicked: function(e) {
         clearInterval(window.timer);
